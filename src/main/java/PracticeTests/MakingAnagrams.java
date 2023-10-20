@@ -37,21 +37,27 @@ public class MakingAnagrams {
 
         // Increment counts for characters in the first string (a)
         for (char ch : a.toCharArray()) {
+            // Update the count for the character at its corresponding position in the list
             charCountA.set(ch - 'a', charCountA.get(ch - 'a') + 1);
         }
 
         // Increment counts for characters in the second string (b)
         for (char ch : b.toCharArray()) {
+            // Update the count for the character at its corresponding position in the list
             charCountB.set(ch - 'a', charCountB.get(ch - 'a') + 1);
         }
 
         // Calculate the total number of deletions needed
         int deletions = 0;
         for (int i = 0; i < 26; i++) {
-            deletions += Math.abs(charCountA.get(i) - charCountB.get(i));
+            // Find the absolute difference between character counts in both lists
+            int diff = Math.abs(charCountA.get(i) - charCountB.get(i));
+            // Add the absolute difference to the total deletions
+            deletions += diff;
         }
 
         return deletions;
+
 
 
     }

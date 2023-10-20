@@ -1,0 +1,24 @@
+List Initialization: We create two lists, charCountA
+and charCountB, to count the frequencies of characters in strings a and b.
+These lists are initialized with 26 elements to represent lowercase English letters (a-z).
+
+Zero Initialization: We initialize both lists with zeros.
+Each element in the lists corresponds to a character position in the alphabet.
+
+Count Increment for String a: We iterate through the characters in the first string, a.
+For each character, we increment the count in charCountA at the corresponding position.
+This is done by subtracting the ASCII value of 'a' from the character's ASCII value, which gives us the index of the character in the list.
+
+Count Increment for String b: Similar to step 3,
+we iterate through the characters in the second string, b,
+and increment the count in charCountB at the corresponding position.
+
+Deletion Calculation: We calculate the total number of deletions needed
+by iterating through both charCountA and charCountB. For each character position,
+we find the absolute difference between the counts in both lists and add it to the deletions variable.
+
+Printing the Result: Finally, we print the deletions count,
+which represents the minimum number of character deletions needed to make the two strings anagrams.
+
+This code demonstrates how to count character frequencies using lists and calculate
+the minimum number of deletions for anagram strings.
