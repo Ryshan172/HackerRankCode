@@ -1,9 +1,6 @@
-package Date_and_Time;
+package Challenges.Date_and_Time;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
 import java.time.*;
 
 public class SolutionB {

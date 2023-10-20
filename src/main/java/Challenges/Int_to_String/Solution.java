@@ -1,4 +1,4 @@
-package Int_to_String;
+package Challenges.Int_to_String;
 
 /*
 You are given an integer n

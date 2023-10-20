@@ -1,4 +1,4 @@
-package End_Of_File;
+package Challenges.End_Of_File;
 
 /*
 The challenge here is to read n lines of input until you reach EOF, then number and print all

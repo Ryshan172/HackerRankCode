@@ -1,4 +1,4 @@
-package Output_Formatting;
+package Challenges.Output_Formatting;
 
 //Java's System.out.printf function can be used to print formatted output. The purpose of this exercise is to test your understanding of formatting output using printf.
 //

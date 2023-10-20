@@ -1,4 +1,4 @@
-package stdinStdoutI;
+package Challenges.stdinStdoutI;
 
 import java.util.*;
 

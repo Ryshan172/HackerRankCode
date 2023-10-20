@@ -1,0 +1,72 @@
+A student is taking a cryptography class and has found anagrams to be very useful. Two strings are anagrams of each other if the first string's letters can be rearranged to form the second string. In other words, both strings must contain the same exact letters in the same exact frequency. For example, bacdc and dcbac are anagrams, but bacdc and dcbad are not.
+
+The student decides on an encryption scheme that involves two large strings. The encryption is dependent on the minimum number of character deletions required to make the two strings anagrams. Determine this number.
+
+Given two strings,  and , that may or may not be of the same length, determine the minimum number of character deletions required to make  and  anagrams. Any characters can be deleted from either of the strings.
+
+Example
+
+
+Delete  from  and  from  so that the remaining strings are  and  which are anagrams. This takes  character deletions.
+
+Function Description
+
+Complete the makeAnagram function in the editor below.
+
+makeAnagram has the following parameter(s):
+
+string a: a string
+string b: another string
+Returns
+
+int: the minimum total characters that must be deleted
+Input Format
+
+The first line contains a single string, .
+The second line contains a single string, .
+
+Constraints
+
+The strings  and  consist of lowercase English alphabetic letters, ascii[a-z].
+Sample Input
+
+cde
+abc
+Sample Output
+
+4
+Explanation
+
+Delete the following characters from the strings make them anagrams:
+
+Remove d and e from cde to get c.
+Remove a and b from abc to get c.
+It takes  deletions to make both strings anagrams.
+
+
+
+
+Solution:
+
+Create a Data Structure to Count Character Frequencies:
+
+We start by creating a data structure to count the frequencies of characters in the strings. In the code example, we use a Map (specifically, a HashMap) to store the counts of each character.
+Increment Counts for Characters in the First String (a):
+
+We iterate through the characters in the first string, a. For each character:
+Check if it's already present in the charCount map. If not, initialize its count to 0.
+Increment the count by 1.
+Decrement Counts for Characters in the Second String (b):
+
+Similarly, we iterate through the characters in the second string, b. For each character:
+Check if it's already present in the charCount map. If not, initialize its count to 0.
+Decrement the count by 1.
+Calculate Deletions:
+
+After processing both strings, we have a map (charCount) where the keys are characters, and the values are the differences in the frequency counts between the two strings. If a character is present in a but not in b, its count is positive. If it's present in b but not in a, its count is negative. If both strings have the same character frequency, the count is 0.
+
+To find the total number of deletions required to make the two strings anagrams, we sum the absolute differences for all characters. This is done in the final loop, where we iterate through the values of the charCount map and add the absolute value of each count to the deletions variable.
+
+Finally, we return the deletions count as the minimum number of character deletions needed to make the two strings anagrams.
+
+In the provided code, the example strings "cde" and "abc" are used to demonstrate these steps. The final result is 4 deletions because you need to delete "d" and "e" from the first string "cde" and "a" and "b" from the second string "abc" to make them anagrams.

@@ -1,4 +1,4 @@
-package StdinStdout_II;
+package Challenges.StdinStdout_II;
 
 import java.util.Scanner;
 

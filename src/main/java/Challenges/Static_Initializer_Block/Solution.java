@@ -1,9 +1,8 @@
-package Static_Initializer_Block;
+package Challenges.Static_Initializer_Block;
 
 // Problem: https://www.hackerrank.com/challenges/java-static-initializer-block/problem?isFullScreen=true
 
 
-import java.io.*;
 import java.util.*;
 
 

@@ -1,7 +1,6 @@
-package Loops_II;
+package Challenges.Loops_II;
 
 import java.util.*;
-import java.io.*;
 
 
 public class Solution {

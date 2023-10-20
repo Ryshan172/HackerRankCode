@@ -1,4 +1,4 @@
-package Loops_I;
+package Challenges.Loops_I;
 /*
 //Task
 //Given an integer, N, print its first  multiples. Each multiple  (where ) should be printed on a new line in the form: N x i = result.
@@ -30,12 +30,6 @@ package Loops_I;
  */
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
